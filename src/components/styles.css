@@ -1,0 +1,86 @@
+/*Navbar css */
+
+header{
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%) !important;
+    background-color: #310c59 !important;
+}
+
+header Nav a{
+    color: #fff !important;
+    
+    padding-left: 25px !important;
+    font-size: 1.1rem !important;
+    font-weight: 600;
+    
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    margin-right: 45px;
+    color: #fff !important;
+    text-align: center;
+}
+
+.navbar-brand .logo{
+     
+    width: 13%;
+    margin-left: 15px;
+   
+}
+.navartoggle {
+    background-color: #fff !important;
+}
+
+@media(max-width : 668px){
+    .navbar-expand-lg .navbar-nav .nav-link{
+    text-align: center;
+   }
+}
+/* navabar css ends */
+
+
+/* // Intro Section CSS */
+.home{
+    margin-left: 74px;
+    margin-top: 50px;
+    /* overflow-x: hidden; */
+}
+
+.home__title{
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    color: #310c59;
+    font-weight: bold;
+}
+
+.home__img img{
+    width: 100%;
+
+}
+.intro{
+    color: #310c59;
+    font-weight: 600;
+}
+
+  /* Intro section css ends */
+
+  /* Login Page CSS Starts */
+
+  .login{
+    background-color: #310c59;
+    height: 100%;
+    
+  }
+ .form-check-label{
+    margin-left: 7px;
+ }
+  .login h3{
+    font-weight: bold;
+  }
+  .loginBtn{
+    width: 100%;
+    background-color: #310c59 !important;
+    outline: none !important;
+  }
+ 
+
+
+  

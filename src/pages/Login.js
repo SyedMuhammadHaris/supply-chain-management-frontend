@@ -1,4 +1,14 @@
+import { useNavigate } from "react-router-dom";
+
 const Login = () => {
+   
+  const naviagte = useNavigate();
+  const loginFrom = (e) =>{
+     e.preventDefault();
+     
+     naviagte('/dashboard');
+   
+  }
   return (
     <>
       <section className="vh-100 login">
@@ -57,7 +67,7 @@ const Login = () => {
                       Remember password{" "}
                     </label>
                   </div>
-                  <button className="btn btn-primary loginBtn" type="submit">
+                  <button className="btn btn-primary loginBtn" onClick={loginFrom}>
                     Login
                   </button>
                 </div>

@@ -5,18 +5,26 @@ import Home from "./pages/Home";
 import Login from "./pages/Login.js";
 import SignUp from "./pages/SignUp";
 import NavbarComp from './components/NavbarComp'
+import Dashboard from "./components/adminDashoboard/Dashboard";
+import Manufactures from "./components/adminDashoboard/Manufactures";
+import Retailer from "./components/adminDashoboard/Retailer";
+import Transporter from "./components/adminDashoboard/Transporter";
 
 // #310c59 color of background
 function App() {
   return (
     <div>
      <BrowserRouter>
-      <NavbarComp />
+      {/* <NavbarComp /> */}
 
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/signup" element={<SignUp />}/>
+        <Route path="/dashboard" element= {<Dashboard />} />
+        <Route path="/manufacture" element= {<Manufactures />} />
+        <Route path="/retailer" element={<Retailer />} />
+        <Route path="/transporter" element={<Transporter />}/>
       </Routes>
      </BrowserRouter>
     </div>

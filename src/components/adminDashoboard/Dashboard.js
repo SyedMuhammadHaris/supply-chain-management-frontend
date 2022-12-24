@@ -56,7 +56,7 @@ const Dashboard = () => {
               Add Transporter
             </Link>
             <Link
-               to="/managecatogories"
+              to="/managecatogories"
               className="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             >
               <i className="fas fa-solid fa-plus me-2" />

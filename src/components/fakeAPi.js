@@ -1,41 +1,126 @@
- const fakeApi = {
-       manufactures : [   {
-            "name": "Bilal Hayat",
-            "username" : "Bilal",
-            "email": "bilal@gmail.com",
-            "phoneno": "033XXXXXX",
-            "id": 1
-          },
-          {
-            "name": "Sarim Ali",
-            "username" : "Sarim",
-            "email": "Sarim@gmail.com",
-            "phoneno": "033XXXXXX",
-            "id": 2
-          },
-          {
-            "name": "Fahad Shamsi",
-            "username" : "Fahad",
-            "email": "fahad@gmail.com",
-            "phoneno": "033XXXXXX",
-            "id": 3,
-          },
-          {
-            "name": "Amar Lal",
-            "username" : "Amar",
-            "email": "Amar@gmail.com",
-            "phoneno": "033XXXXXX",
-            "id": 4,
-          },
-          {
-            "name": "Mujtaba Hasnain",
-            "username" : "Mujtaba",
-            "email": "Mujtaba@gmail.com",
-            "phoneno": "033XXXXXX",
-            "id": 5
-          }
-        ]
-      
-    }
+const fakeApi = {
+  manufactures: [
+    {
+      name: "Bilal Hayat",
+      username: "Bilal",
+      email: "bilal@gmail.com",
+      phoneno: "033XXXXXX",
+      id: 1,
+    },
+    {
+      name: "Sarim Ali",
+      username: "Sarim",
+      email: "Sarim@gmail.com",
+      phoneno: "033XXXXXX",
+      id: 2,
+    },
+    {
+      name: "Fahad Shamsi",
+      username: "Fahad",
+      email: "fahad@gmail.com",
+      phoneno: "033XXXXXX",
+      id: 3,
+    },
+    {
+      name: "Amar Lal",
+      username: "Amar",
+      email: "Amar@gmail.com",
+      phoneno: "033XXXXXX",
+      id: 4,
+    },
+    {
+      name: "Mujtaba Hasnain",
+      username: "Mujtaba",
+      email: "Mujtaba@gmail.com",
+      phoneno: "033XXXXXX",
+      id: 5,
+    },
+  ],
 
-    export {fakeApi};
+  orders: [
+    {
+      orderId: "1",
+      retailer: "Rahmat Karyana Store",
+      date: "22-12-22",
+      approvedStatus: "Not Approved",
+      orderStatus: "Pending",
+      details: "Details",
+    },
+    {
+      orderId: "2",
+      retailer: "Imtiaz Super Market",
+      date: "24-12-22",
+      approvedStatus: "Approved",
+      orderStatus: "Completed",
+      details: "Details",
+    },
+    {
+      orderId: "3",
+      retailer: "Chase Value Centre",
+      date: "23-12-22",
+      approvedStatus: "Approved",
+      orderStatus: "Completed",
+      details: "Details",
+    },
+    {
+      orderId: "4",
+      retailer: "Naheedd Suparmarket",
+      date: "26-12-22",
+      approvedStatus: "Approved",
+      orderStatus: "Completed",
+      details: "Details",
+    },
+    {
+      orderId: "5",
+      retailer: "Haderi Suparmarket",
+      date: "28-12-22",
+      approvedStatus: "Not Approved",
+      orderStatus: "Pending",
+      details: "Details",
+    },
+  ],
+  products: [
+    {
+      code: "1",
+      name: "Jazaa Chakki Atta",
+      price: "20000",
+      unit: "unit 3",
+      category: "Food",
+      quantity: "5",
+    },
+    {
+      code: "2",
+      name: "Jazaa Rice",
+      price: "40000",
+      unit: "unit 3",
+      category: "Food",
+      quantity: "5",
+    },
+    {
+      code: "3",
+      name: "Jazaa Black Gram",
+      price: "35000",
+      unit: "unit 3",
+      category: "Pulses",
+      quantity: "5",
+    },
+    {
+      code: "4",
+      name: "Jazaa Black Seeds",
+      price: "25000",
+      unit: "unit 3",
+      category: "Seeds",
+      quantity: "5",
+    },
+    {
+      code: "5",
+      name: "Jazaa Biryani Masala",
+      price: "40000",
+      unit: "unit 2",
+      category: "Masalas",
+      quantity: "5",
+    },
+  ],
+};
+
+export { fakeApi };

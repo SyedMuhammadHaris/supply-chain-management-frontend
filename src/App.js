@@ -9,6 +9,7 @@ import Dashboard from "./components/adminDashoboard/Dashboard";
 import Manufactures from "./components/adminDashoboard/Manufactures";
 import Retailer from "./components/adminDashoboard/Retailer";
 import Transporter from "./components/adminDashoboard/Transporter";
+import Products from "./components/adminDashoboard/Products";
 
 // #310c59 color of background
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/manufacture" element= {<Manufactures />} />
         <Route path="/retailer" element={<Retailer />} />
         <Route path="/transporter" element={<Transporter />}/>
+        <Route path="/products" element={<Products />} />
       </Routes>
      </BrowserRouter>
     </div>

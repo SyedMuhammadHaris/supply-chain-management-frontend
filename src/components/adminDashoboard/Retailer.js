@@ -38,7 +38,9 @@ const Retailer = () => {
                   </tr>
                 );
               })}
-              <button className="btn btn-danger mx-4 my-4">Delete</button>
+              <button className="btn btn-danger mx-4 my-4 btnDelete">
+                Delete
+              </button>
             </tbody>
           </table>
         </div>

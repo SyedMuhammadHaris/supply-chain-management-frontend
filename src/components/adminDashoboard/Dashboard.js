@@ -16,14 +16,14 @@ const Dashboard = () => {
       <div className={`d-flex ${isToggle ? "toggled" : null}`} id="wrapper">
         {/* Sidebar */}
         <div className="bg-white" id="sidebar-wrapper">
-          <div className="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+          <div className="sidebar-heading text-center py-4  fs-4 fw-bold text-uppercase border-bottom">
             <i className="fas fa-truck me-1" />
             Vector SCMS
           </div>
           <div className="list-group list-group-flush my-3">
             <Link
               to="/dashboard"
-              className="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+              className="list-group-item list-group-item-action bg-transparent second-text fw-bold text-dark"
             >
               <i className="fas fa-tachometer-alt me-2" />
               Dashboard
@@ -96,11 +96,11 @@ const Dashboard = () => {
                 id="menu-toggle"
                 onClick={handleClick}
               />
-              <h2 className="fs-2 m-0">Dashboard</h2>
+              <h2 className="fs-2 m-0 text-white fw-bold">Dashboard</h2>
             </div>
 
-            <p className="ms-auto">
-              <i className="fas fa-user me-2"></i>John Doe
+            <p className="ms-auto text-white">
+              <i className="fas fa-user me-2 text-white"></i>Haris
             </p>
           </nav>
           <div className="container-fluid px-4">
@@ -108,42 +108,42 @@ const Dashboard = () => {
               <div className="col-md-3">
                 <div className="p-2 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                   <Link to="/manufacture">
-                    <p className="fs-5">Manufactures</p>
+                    <p className="fs-5 text-dark">Manufactures</p>
                   </Link>
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="p-2 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                   <Link to="/retailer">
-                    <p className="fs-5">Retailers</p>
+                    <p className="fs-5 text-dark">Retailers</p>
                   </Link>
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="p-2 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                   <Link to="/transporter">
-                    <p className="fs-5">Transporter</p>
+                    <p className="fs-5 text-dark">Transporter</p>
                   </Link>
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="p-2 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                   <Link to="/products">
-                    <p className="fs-5">Products</p>
+                    <p className="fs-5 text-dark">Products</p>
                   </Link>
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="p-2 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                   <Link to="/orders">
-                    <p className="fs-5">Orders</p>
+                    <p className="fs-5 text-dark">Orders</p>
                   </Link>
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="p-2 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                   <Link to="/warehouse">
-                    <p className="fs-5">Warehouse</p>
+                    <p className="fs-5 text-dark">Warehouse</p>
                   </Link>
                 </div>
               </div>

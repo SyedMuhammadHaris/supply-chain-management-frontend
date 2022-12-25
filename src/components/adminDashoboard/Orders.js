@@ -6,7 +6,7 @@ const Orders = () => {
   return (
     <div className="d-flex">
       <div className="row my-5 mx-4">
-        <h3 className="fs-4 mb-3">Recent Orders</h3>
+        <h3 className="fs-4 mb-3 text-white">Recent Orders</h3>
         <div className="col">
           <table className="table bg-white rounded shadow-sm  table-hover">
             <thead>

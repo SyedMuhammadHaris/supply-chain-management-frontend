@@ -29,7 +29,6 @@ const Transporter = () => {
                     <td>{manufacture.phoneno}</td>
                     <td>Gulshan-e-Iqbal Block 13 Karachi</td>
                     <td>
-                    
                       <button className="btn btn-light">
                         <i className="fas fa-solid fa-pen"></i>
                       </button>
@@ -37,7 +36,9 @@ const Transporter = () => {
                   </tr>
                 );
               })}
-              <button className="btn btn-danger mx-4 my-4">Delete</button>
+              <button className="btn btn-danger mx-4 my-4 btnDelete">
+                Delete
+              </button>
             </tbody>
           </table>
         </div>

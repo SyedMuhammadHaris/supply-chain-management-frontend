@@ -16,11 +16,15 @@ a{
   text-decoration: none !important;
 }
 .addBtn{
-  background-color: #009d63 !important;
+  /* background-color: #009d63 !important; */
+  background-color: #4070f4 !important;
   /* outline: none !important; */
-  border-color: #009d63 !important;
+  border-color: #4070f4 !important;
 }
-
+.btnDelete{
+  background-color: #4070f4 !important;
+  border-color: #4070f4 !important;
+}
 /* .formGroup{
   
       width: 50% !important;

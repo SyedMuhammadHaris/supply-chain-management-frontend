@@ -2,7 +2,9 @@
 
 header{
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%) !important;
-    background-color: #310c59 !important;
+    /* background-color: #310c59 !important; */
+    /* background-color: #009d63 !important; */
+    background-color: #4070f4 !important;
 }
 
 header Nav a{
@@ -47,7 +49,9 @@ header Nav a{
 .home__title{
     font-size: 3rem;
     margin-bottom: 2.5rem;
-    color: #310c59;
+    /* color: #310c59; */
+    /* color: #009d63; */
+    color: #4070f4;
     font-weight: bold;
 }
 
@@ -56,7 +60,9 @@ header Nav a{
 
 }
 .intro{
-    color: #310c59;
+    /* color: #310c59; */
+    /* color: #009d63; */
+    color: #4070f4;
     font-weight: 600;
 }
 
@@ -65,7 +71,8 @@ header Nav a{
   /* Login Page CSS Starts */
 
   .login{
-    background-color: #310c59;
+    /* background-color: #009d63; */
+    background-color: #4070f4;
     height: 100%;
     
   }
@@ -77,6 +84,10 @@ header Nav a{
   }
   .loginBtn{
     width: 100%;
-    background-color: #310c59 !important;
+    /* background-color: #310c59 !important; */
+    /* background-color: #009d63 !important; */
+    background-color: #4070f4 !important;
     outline: none !important;
+    /* border-color: #009d63 !important; */
+    border-color: #4070f4 !important;
   }

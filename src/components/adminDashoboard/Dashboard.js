@@ -67,7 +67,7 @@ const Dashboard = () => {
               href="#"
               className="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             >
-              <i class="fas fa-chart-line me-2"></i>Analytics
+              <i className="fas fa-chart-line me-2"></i>Analytics
             </Link>
             <Link
               to="/chat"

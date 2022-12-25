@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./dashboard.css";
+import Orders from "./Orders";
 
 const Dashboard = () => {
   //   const []
@@ -22,7 +23,7 @@ const Dashboard = () => {
           <div className="list-group list-group-flush my-3">
             <Link
               to="/dashboard"
-              className="list-group-item list-group-item-action bg-transparent second-text active"
+              className="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             >
               <i className="fas fa-tachometer-alt me-2" />
               Dashboard
@@ -64,7 +65,7 @@ const Dashboard = () => {
             </Link>
             <Link
               href="#"
-              class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+              className="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             >
               <i class="fas fa-chart-line me-2"></i>Analytics
             </Link>
@@ -139,10 +140,17 @@ const Dashboard = () => {
                   </Link>
                 </div>
               </div>
+              <div className="col-md-3">
+                <div className="p-2 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                  <Link to="/warehouse">
+                    <p className="fs-5">Warehouse</p>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div className="row my-5">
-              <h3 className="fs-4 mb-3">Recent Orders</h3>
-              <div className="col">
+              {/* <h3 className="fs-4 mb-3">Recent Orders</h3> */}
+              {/* <div className="col">
                 <table className="table bg-white rounded shadow-sm  table-hover">
                   <thead>
                     <tr>
@@ -229,7 +237,8 @@ const Dashboard = () => {
                     </tr>
                   </tbody>
                 </table>
-              </div>
+              </div> */}
+              <Orders />
             </div>
           </div>
         </div>

@@ -1,8 +1,10 @@
 import { fakeApi } from "../fakeAPi";
+import Dashboard from "./Dashboard";
 import "./dashboard.css";
 const Manufactures = () => {
   return (
     <div className="d-flex">
+      {/* <Dashboard /> */}
       <div className="row my-5 mx-4">
         <h3 className="fs-4 mb-3">Manufactures</h3>
         <div className="col">

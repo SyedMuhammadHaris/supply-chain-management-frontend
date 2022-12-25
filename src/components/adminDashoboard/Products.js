@@ -14,7 +14,6 @@ const Products = () => {
                 </th>
                 <th scope="col">Name</th>
                 <th scope="col">Price</th>
-                <th scope="col">Unit</th>
                 <th scope="col">Category</th>
                 <th scope="col">Quantity</th>
                 <th scope="col">Edit</th>
@@ -27,9 +26,8 @@ const Products = () => {
                     <th scope="row">{product.code}</th>
                     <td>{product.name}</td>
                     <td>{product.price}</td>
-                    <td>{product.unit}</td>
-                    <td>{product.category}</td>
                     <td>{product.quantity}</td>
+                    <td>{product.category}</td>
                     <td>
                       <button className="btn btn-light">
                         <i className="fas fa-solid fa-pen"></i>

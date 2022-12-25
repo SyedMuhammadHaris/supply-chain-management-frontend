@@ -6,7 +6,7 @@ const Orders = () => {
   return (
     <div className="d-flex">
       <div className="row my-5 mx-4">
-        <h3 className="fs-4 mb-3">Manufactures</h3>
+        <h3 className="fs-4 mb-3">Recent Orders</h3>
         <div className="col">
           <table className="table bg-white rounded shadow-sm  table-hover">
             <thead>
@@ -17,8 +17,7 @@ const Orders = () => {
                 <th scope="col">Retailer</th>
                 <th scope="col">Date</th>
                 <th scope="col">Approved Status</th>
-                <th scope="col">Username</th>
-                <th scope="col">Order Staus</th>
+                <th scope="col">Order Status</th>
                 <th scope="col">Details</th>
               </tr>
             </thead>
@@ -31,12 +30,11 @@ const Orders = () => {
                     <td>{order.date}</td>
                     <td>{order.approvedStatus}</td>
                     <td>{order.orderStatus}</td>
-                    <td>{order.details}</td>
                     {/* <button className="btn btn-light">
                       <i className="fas fa-solid fa-pen"></i>
                     </button> */}
                     <td>
-                      <Link>Details</Link>
+                      <Link>{order.details}</Link>
                     </td>
                   </tr>
                 );

@@ -11,6 +11,11 @@ import Retailer from "./components/adminDashoboard/Retailer";
 import Transporter from "./components/adminDashoboard/Transporter";
 import Products from "./components/adminDashoboard/Products";
 import Orders from "./components/adminDashoboard/Orders";
+import AddProduct from "./components/adminDashoboard/forms/AddProduct";
+import AddManufacture from "./components/adminDashoboard/forms/AddManufacture";
+import AddRetailer from "./components/adminDashoboard/forms/AddRetailer";
+import AddTransporter from "./components/adminDashoboard/forms/AddTransporter";
+import ManageCatgories from "./components/adminDashoboard/forms/ManageCatgories";
 
 // #310c59 color of background
 function App() {
@@ -29,6 +34,11 @@ function App() {
           <Route path="/transporter" element={<Transporter />} />
           <Route path="/products" element={<Products />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/addproduct" element={<AddProduct />} />
+          <Route path="/addmanufacture" element={<AddManufacture />} />
+          <Route path="/addretailer" element={<AddRetailer />} />
+          <Route path="/addtransporter" element={<AddTransporter />} />
+          <Route path="/managecatogories" element={<ManageCatgories />} />
         </Routes>
       </BrowserRouter>
     </div>

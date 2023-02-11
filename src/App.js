@@ -16,6 +16,9 @@ import AddManufacture from "./components/adminDashoboard/forms/AddManufacture";
 import AddRetailer from "./components/adminDashoboard/forms/AddRetailer";
 import AddTransporter from "./components/adminDashoboard/forms/AddTransporter";
 import ManageCatgories from "./components/adminDashoboard/forms/ManageCatgories";
+import InventoryManagement from "./components/adminDashoboard/InventoryManagement";
+import ProcurementModule from "./components/adminDashoboard/Procurement";
+
 
 // #310c59 color of background
 function App() {
@@ -34,6 +37,8 @@ function App() {
           <Route path="/transporter" element={<Transporter />} />
           <Route path="/products" element={<Products />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/inventory" element={<InventoryManagement />} />
+          <Route path="/procurement" element={<ProcurementModule />} />
           <Route path="/addproduct" element={<AddProduct />} />
           <Route path="/addmanufacture" element={<AddManufacture />} />
           <Route path="/addretailer" element={<AddRetailer />} />

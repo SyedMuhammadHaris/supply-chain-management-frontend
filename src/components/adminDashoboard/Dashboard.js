@@ -142,8 +142,15 @@ const Dashboard = () => {
               </div>
               <div className="col-md-3">
                 <div className="p-2 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                  <Link to="/warehouse">
-                    <p className="fs-5 text-dark">Warehouse</p>
+                  <Link to="/inventory">
+                    <p className="fs-5 text-dark">Inventory</p>
+                  </Link>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="p-2 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                  <Link to="/procurement">
+                    <p className="fs-5 text-dark">Procurement</p>
                   </Link>
                 </div>
               </div>

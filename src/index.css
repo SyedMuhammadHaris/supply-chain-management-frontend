@@ -25,6 +25,10 @@ a{
   background-color: #4070f4 !important;
   border-color: #4070f4 !important;
 }
+
+.record{
+  margin: 15px;
+}
 /* .formGroup{
   
       width: 50% !important;

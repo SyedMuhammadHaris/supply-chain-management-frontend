@@ -2,19 +2,23 @@ import React, { useState } from "react";
 import { Form, Button} from "react-bootstrap";
 
 
-const AddManufacture = () => {
-    const [manufacturerName, setManufacturerName] = useState("");
-    const [manufacturerEmail, setManufacturerEmail] = useState("");
-    const [manufacturerPhone, setManufacturerPhone] = useState("");
+const AddSupplier = () => {
+    const [supplierName, setSupplierName] = useState("");
+    const [supplierEmail, setSupplierEmail] = useState("");
+    const [supplierPhone, setSupplierPhone] = useState("");
+    const [supplierItem, setSupplierItem] = useState("");
   const handleSubmit = (event) => {
     event.preventDefault();
     // Add the product to your database or API here
     // You could also dispatch an action to a Redux store here
-    console.log(`Added product: ${manufacturerName} - ${manufacturerEmail} - ${manufacturerPhone}`);
+    console.log(
+      `Added product: ${supplierName} - ${supplierEmail} - ${supplierPhone} - ${supplierItem}`
+    );
     // Reset the form
-    setManufacturerName("");
-    setManufacturerEmail("");
-    setManufacturerPhone("");
+    setSupplierName("");
+    setSupplierEmail("");
+    setSupplierPhone("");
+    setSupplierItem("");
   };
 
   return (
@@ -24,8 +28,8 @@ const AddManufacture = () => {
         <Form.Control
           type="text"
           placeholder="Enter name"
-          value={manufacturerName}
-          onChange={(event) => setManufacturerName(event.target.value)}
+          value={supplierName}
+          onChange={(event) => setSupplierName(event.target.value)}
         />
       </Form.Group>
       <Form.Group controlId="formName" className="formGroup pt-3">
@@ -33,8 +37,8 @@ const AddManufacture = () => {
         <Form.Control
           type="text"
           placeholder="Enter Email"
-          value={manufacturerEmail}
-          onChange={(event) => setManufacturerEmail(event.target.value)}
+          value={supplierEmail}
+          onChange={(event) => setSupplierEmail(event.target.value)}
         />
       </Form.Group>
       <Form.Group controlId="formPrice" className="formGroup pt-3">
@@ -42,8 +46,17 @@ const AddManufacture = () => {
         <Form.Control
           type="type"
           placeholder="Enter phone number"
-          value={manufacturerPhone}
-          onChange={(event) => setManufacturerPhone(event.target.value)}
+          value={supplierPhone}
+          onChange={(event) => setSupplierPhone(event.target.value)}
+        />
+      </Form.Group>
+      <Form.Group controlId="formPrice" className="formGroup pt-3">
+        <Form.Label className="fw-bold">Items Name</Form.Label>
+        <Form.Control
+          type="type"
+          placeholder="Enter phone number"
+          value={supplierItem}
+          onChange={(event) => setSupplierItem(event.target.value)}
         />
       </Form.Group>
       {/* <Form.Group controlId="formCategory" className="formGroup pt-3">
@@ -55,14 +68,13 @@ const AddManufacture = () => {
           onChange={(event) => setCategory(event.target.value)}
         />
       </Form.Group> */}
-     
 
       <Button variant="primary" type="submit" className="addBtn mt-3">
-        Add Manufacture
+        Add Supplier
       </Button>
     </Form>
   );
 };
 
-export default AddManufacture;
+export default AddSupplier;
 

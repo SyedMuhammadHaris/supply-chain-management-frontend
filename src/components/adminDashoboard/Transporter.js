@@ -6,7 +6,7 @@ const Transporter = () => {
       <div className="row my-5 mx-4">
         <h3 className="fs-4 mb-3">Transporter</h3>
         <div className="col">
-          <table className="table bg-white rounded shadow-sm  table-hover">
+          <table className="table bg-white rounded shadow-sm  table-hover bordered">
             <thead>
               <tr>
                 <th scope="col" width={50}>

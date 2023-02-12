@@ -7,23 +7,24 @@ const ProcurementModule = () => {
       id: 1,
       name: "Supplier A",
       contact: "contactA@email.com",
-      deliverySchedule: "Mon-Wed",
+      rawMaterial: "A,B",
     },
     {
       id: 2,
       name: "Supplier B",
       contact: "contactB@email.com",
-      deliverySchedule: "Tue-Thu",
+      rawMaterial: "C,F",
     },
     {
       id: 3,
       name: "Supplier C",
       contact: "contactC@email.com",
-      deliverySchedule: "Wed-Fri",
+      rawMaterial: "D,E",
     },
   ]);
   const [selectedSupplier, setSelectedSupplier] = useState({});
   const [purchaseOrders, setPurchaseOrders] = useState([]);
+   const [quantity, setQauntity] = useState("");
 
   const handleSelectSupplier = (supplier) => {
     setSelectedSupplier(supplier);
@@ -42,6 +43,7 @@ const ProcurementModule = () => {
           supplier: selectedSupplier.name,
           date: form.elements.date.value,
           items: form.elements.items.value,
+          quantity: form.elements.quantity.value
         },
       ]);
       form.reset();
@@ -53,13 +55,14 @@ const ProcurementModule = () => {
       <Row className="my-5">
         <Col xs={12} md={6}>
           <h3>Supplier List</h3>
-          <Table striped bordered hover>
+          <Table bordered hover>
             <thead>
               <tr>
                 <th>#</th>
                 <th>Name</th>
                 <th>Contact</th>
-                <th>Delivery Schedule</th>
+                {/* <th>Phone No</th> */}
+                <th>Raw Materials</th>
               </tr>
             </thead>
             <tbody>
@@ -71,7 +74,7 @@ const ProcurementModule = () => {
                   <td>{supplier.id}</td>
                   <td>{supplier.name}</td>
                   <td>{supplier.contact}</td>
-                  <td>{supplier.deliverySchedule}</td>
+                  <td>{supplier.rawMaterial}</td>
                 </tr>
               ))}
             </tbody>
@@ -81,7 +84,7 @@ const ProcurementModule = () => {
           <h3>Create Purchase Order</h3>
           <Form onSubmit={handleSubmitPurchaseOrder}>
             <Form.Group controlId="supplier">
-              <Form.Label>Supplier</Form.Label>
+              <Form.Label className="py-2 fw-bold">Supplier</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Select a supplier"
@@ -90,14 +93,32 @@ const ProcurementModule = () => {
               />
             </Form.Group>
             <Form.Group controlId="date">
-              <Form.Label>Date</Form.Label>
+              <Form.Label className="py-3 fw-bold">Date</Form.Label>
               <Form.Control type="date" required />
             </Form.Group>
             <Form.Group controlId="items">
-              <Form.Label>Items</Form.Label>
+              <Form.Label className="py-3 fw-bold">Items</Form.Label>
               <Form.Control type="text" placeholder="Enter items" required />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Form.Group controlId="quantity" className="formGroup pt-3">
+              <Form.Label className="fw-bold">Qauntity</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter  a Quantity"
+                required
+              />
+              {/* <Form.Control
+                type="text"
+                placeholder="Enter a Quantity With Unit"
+                value={quantity}
+                onChange={(event) => setQauntity(event.target.value)}
+              /> */}
+            </Form.Group>
+            <Button
+              variant="primary"
+              type="submit"
+              className="record btnDelete"
+            >
               Submit
             </Button>
           </Form>
@@ -113,6 +134,7 @@ const ProcurementModule = () => {
                 <th>Supplier</th>
                 <th>Date</th>
                 <th>Items</th>
+                <th>Quantity</th>
               </tr>
             </thead>
             <tbody>
@@ -122,8 +144,12 @@ const ProcurementModule = () => {
                   <td>{purchaseOrder.supplier}</td>
                   <td>{purchaseOrder.date}</td>
                   <td>{purchaseOrder.items}</td>
+                  <td>{purchaseOrder.quantity}</td>
                 </tr>
               ))}
+              <button className="btn btn-danger mx-4 my-4 btnDelete">
+                Save
+              </button>
             </tbody>
           </Table>
         </Col>

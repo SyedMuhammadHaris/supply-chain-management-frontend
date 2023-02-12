@@ -36,11 +36,11 @@ const Dashboard = () => {
               Add Products
             </Link>
             <Link
-              to="/addmanufacture"
+              to="/addsupplires"
               className="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             >
               <i className="fas fa-solid fa-plus me-2" />
-              Add Manufactures
+              Add Suppliers
             </Link>
             <Link
               to="/addretailer"
@@ -69,13 +69,13 @@ const Dashboard = () => {
             >
               <i className="fas fa-chart-line me-2"></i>Analytics
             </Link>
-            <Link
+            {/* <Link
               to="/chat"
               className="list-group-item list-group-item-action bg-transparent second-text fw-bold"
             >
               <i className="fas fa-comment-dots me-2" />
               Chat
-            </Link>
+            </Link> */}
 
             <Link
               to="/"
@@ -108,7 +108,7 @@ const Dashboard = () => {
               <div className="col-md-3">
                 <div className="p-2 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                   <Link to="/manufacture">
-                    <p className="fs-5 text-dark">Manufactures</p>
+                    <p className="fs-5 text-dark">Manufacture</p>
                   </Link>
                 </div>
               </div>
